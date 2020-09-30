@@ -11,15 +11,19 @@ int main(int argc, char** argv) {
 
   cout << "Enter number of hours worked: ";
   cin >> hoursworked;
-  if (hoursworked < 0) {
+  if (hoursworked < 0) 
+  {
     cout << "You can't work negative hours, generally" << endl;
     return 0;
   }
   cout << "Assuming a 40 hour work week, pay info is as follows:" << endl;
   double grosspay;
-  if (hoursworked > 40.0) {
+  if (hoursworked > 40.0) 
+  {
     grosspay = flatrate * 40.0 + (hoursworked - 40.0) * overtime;
-  } else {
+  } 
+  else 
+  {
     grosspay = flatrate * hoursworked;
   }
   cout << "\tGross pay: $" << grosspay << endl;
